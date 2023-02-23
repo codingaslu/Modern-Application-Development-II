@@ -121,8 +121,11 @@ The bind method returns a new function with the this context and some of the arg
 
 ## Difference between script and shell
 
-Explanation:
-In programming, scripts and shells are two different concepts. Scripts refer to a series of instructions that are executed in a specific order. Shell, on the other hand, is a command-line interface that allows users to interact with the system by entering commands.
+**Explanation:**
+
+In the context of JavaScript, a script is a series of instructions that are executed in a specific order, which can be written in a separate file and executed in a browser or a Node.js environment.
+
+JavaScript shell, on the other hand, is an interactive command-line interface that allows users to execute JavaScript code line by line or run a JavaScript file. It is available in most web browsers and in Node.js, and it provides a way to experiment with and test out code snippets before incorporating them into a larger project.
 
 When it comes to global objects, any variable created using var, let, or const keywords outside any function definition inside the browser console environment or in the node interactive environment will automatically be added as a property to the global object.
 
