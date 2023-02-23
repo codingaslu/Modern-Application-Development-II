@@ -109,6 +109,12 @@ let func = a.func1.bind(b, 5);
 func(); // logs "hello world!! Chennai 5"
 
 ```
+In the above example, we have an object a with two functions func1 and func2, and another object b with a function func1.
+
+We use the call method to call func1 of object a with this set to object b and arguments 3 and 4. Similarly, we use the apply method to call func1 of object a with this set to object b and a single argument 10.
+
+Finally, we use the bind method to create a new function func that has its this set to object b and first argument 5. When we call func(), it logs "hello world!! Chennai 5".
+
 
 
 
