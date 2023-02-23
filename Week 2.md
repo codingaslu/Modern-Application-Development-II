@@ -166,8 +166,7 @@ An immediately invoked function is a function that is invoked immediately after 
 
 Example:
 
-javascript
-Copy code
+```javascript
 // Immediately invoked function
 (function() {
   console.log("Hello");
