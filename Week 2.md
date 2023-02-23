@@ -115,6 +115,10 @@ We use the call method to call func1 of object a with this set to object b and a
 
 Finally, we use the bind method to create a new function func that has its this set to object b and first argument 5. When we call func(), it logs "hello world!! Chennai 5".
 
+call and apply methods are particularly useful when you want to borrow a method from one object and use it on another. In the example code, a.func1.call(b, 3, 4) calls the func1 method of a, but with the this context set to b. This can be helpful in situations where you have similar objects with shared methods but different data.
+
+The bind method returns a new function with the this context and some of the arguments preset. This is useful when you want to create a new function with some of the arguments set beforehand, but you don't want to call the function immediately.
+
 
 
 
