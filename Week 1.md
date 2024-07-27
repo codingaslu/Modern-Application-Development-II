@@ -85,3 +85,56 @@ const person = {
 console.log(person.name); // John
 person.sayHello(); // Hello, my name is John
 ```
+## Data Types
+
+JavaScript supports various data types, including:
+
+1. **Numbers**: Represent numeric values.
+
+```javascript
+const age = 30;
+const price = 19.99;
+```
+
+2. **Booleans**: Represent `true` or `false`.
+
+```javascript
+const isDeveloper = true;
+const isAvailable = false;
+```
+
+3. **Strings**: Represent sequences of characters.
+
+```javascript
+const name = "John";
+const greeting = "Hello, world!";
+```
+
+4. **Objects**: Collections of key-value pairs.
+
+```javascript
+const person = {
+  name: "John",
+  age: 30,
+  occupation: "Developer"
+};
+```
+
+## Primitive vs. Reference Types
+
+* **Primitives**: Stored directly in memory. They include numbers, booleans, strings, `null`, `undefined`, and `symbol`.
+
+```javascript
+let x = 10; // Number
+let y = "hello"; // String
+let z = true; // Boolean
+```
+
+* **Objects**: Stored as references in memory. When you create an object, the variable holds a reference (or a pointer) to the location in memory where the object is stored.
+
+```javascript
+const person = { name: "John" };
+const anotherPerson = person; // anotherPerson holds a reference to the same object
+anotherPerson.name = "Jane";
+console.log(person.name); // Jane (both person and anotherPerson reference the same object)
+```
